@@ -1,0 +1,105 @@
+body {
+    margin: 0px;
+    background-color: #E8E8E8;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #D3D3D3;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 265px;
+}
+
+
+/* Home Screen */
+.home-itens { display: flex; }
+
+/* notes */
+.list-notes {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 0px 0px 270px;
+}
+
+.card-note {
+    flex: 1 0 21%;
+    margin: 3px;
+    max-width: 25px;
+    min-width: 250px;
+    height: 250px;
+    border: 1px solid #808080;
+    border-radius: 3px;
+    background-color: #F1F1F1;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    background-color: #fff;
+    height: 70%;
+    margin: 0px 10px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #808080;
+}
+
+.card-note > h4 { text-align: center; }
+
+
+/* classes */
+.list-classes {
+    background-color: #D3D3D3;
+    padding: 10px;
+    position: fixed;
+    height: 100%;
+    top: 50px
+    /* overflow-y: scroll; */
+}
+
+.card-class {
+    border: 2px solid;
+    border-radius: 3px;
+    background-color: #F1F1F1;
+    margin-bottom: 5px;
+    padding-left: 6px   ;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
+    width: 230px;
+    border-left: 6px solid;
+}
+
+
+/* Icon New Note */
+.green-circle {
+    height: 65px;
+    width: 65px;
+    background-color: #BFFCC6;
+    border-radius: 40px;
+    border: solid 1px #808080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.fa-pencil-alt {
+    font-size: 35px;
+    color: #808080;
+}
+
+.green-circle:hover { 
+    cursor: pointer;
+    transform: scale(1.1);
+}

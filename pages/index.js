@@ -1,88 +1,119 @@
-import React from 'react'
-import Head from 'next/head'
-import Nav from '../components/nav'
+import React, { Component } from 'react';
+import Layout from '../components/Layout/Layout';
+import Classes from '../components/Classes/ListClasses';
+import Notes from '../components/Notes/ListNotes';
 
-const Home = () => (
-  <div>
-    <Head>
-      <title>Home</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+class index extends Component {
+    render() {
+        return(
+            <div className="home-itens">
+                <Classes classes={this.state.classesExample}/>
+                <Notes notes={this.state.notesExample}/>
+            </div>
+        );
+    }
 
-    <Nav />
+    constructor(props) {
+        super(props);
+        this.state = {
+            classesExample: [
+                {
+                    id: 1,
+                    name: "Programação Orientada a Objetos",
+                    teacher: "Ricardo Favan",
+                    color: "#FFB5E8"
+                },
+                {
+                    id: 2,
+                    name: "Matemática Discreta",
+                    teacher: "Deise Deolindo",
+                    color: "#B5B9FF"
+                },
+                {
+                    id: 3,
+                    name: "Algoritimos Avançados",
+                    teacher: "Victor Borba",
+                    color: "#FFFFD1"
+                },
+                {
+                    id: 4,
+                    name: "Geometria Analitica",
+                    teacher: "Marçal Bissoli",
+                    color: "#85E3FF"
+                },
+                {
+                    id: 5,
+                    name: "Sociedade, Tecnologia e Inovação",
+                    teacher: "Tsen Chung",
+                    color: "#F3FFE3"
+                },
+                {
+                    id: 6,
+                    name: "Programação Front-End",
+                    teacher: "Ricardo Favan",
+                    color: "#FFABAB"
+                },
+                {
+                    id: 7,
+                    name: "Lógica de Programação",
+                    teacher: "Luís Hilário",
+                    color: "#F6A6FF"
+                }
+            ],
+            notesExample: [
+                {
+                    id: 1,
+                    name: "anotação 1",
+                    data: "anotação de aula genérica"
+                },
+                {
+                    id: 2,
+                    name: "anotação 2",
+                    data: "anotação de aula genérica"
+                },
+                {
+                    id: 3,
+                    name: "anotação 3",
+                    data: "anotação de aula genérica"
+                },
+                {
+                    id: 4,
+                    name: "anotação 4",
+                    data: "anotação de aula genérica"
+                },
+                {
+                    id: 5,
+                    name: "anotação 5",
+                    data: "anotação de aula genérica"
+                },
+                {
+                    id: 6,
+                    name: "anotação 6",
+                    data: "anotação de aula genérica"
+                },
+                {
+                    id: 7,
+                    name: "anotação 7",
+                    data: "anotação de aula genérica"
+                },
+                {
+                    id: 8,
+                    name: "anotação 8",
+                    data: "anotação de aula genérica"
+                },
+                {
+                    id: 9,
+                    name: "anotação 9",
+                    data: "anotação de aula genérica"
+                },
+                {
+                    id: 10,
+                    name: "anotação 10",
+                    data: "anotação de aula genérica"
+                }
+            ]
+        }
+    }
+};
 
-    <div className="hero">
-      <h1 className="title">Welcome to Next.js!</h1>
-      <p className="description">
-        To get started, edit <code>pages/index.js</code> and save to reload.
-      </p>
-
-      <div className="row">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Learn more about Next.js in the documentation.</p>
-        </a>
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Next.js Learn &rarr;</h3>
-          <p>Learn about Next.js by following an interactive tutorial!</p>
-        </a>
-        <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Find other example boilerplates on the Next.js GitHub.</p>
-        </a>
-      </div>
-    </div>
-
-    <style jsx>{`
-      .hero {
-        width: 100%;
-        color: #333;
-      }
-      .title {
-        margin: 0;
-        width: 100%;
-        padding-top: 80px;
-        line-height: 1.15;
-        font-size: 48px;
-      }
-      .title,
-      .description {
-        text-align: center;
-      }
-      .row {
-        max-width: 880px;
-        margin: 80px auto 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-      }
-      .card {
-        padding: 18px 18px 24px;
-        width: 220px;
-        text-align: left;
-        text-decoration: none;
-        color: #434343;
-        border: 1px solid #9b9b9b;
-      }
-      .card:hover {
-        border-color: #067df7;
-      }
-      .card h3 {
-        margin: 0;
-        color: #067df7;
-        font-size: 18px;
-      }
-      .card p {
-        margin: 0;
-        padding: 12px 0 0;
-        font-size: 13px;
-        color: #333;
-      }
-    `}</style>
-  </div>
-)
-
-export default Home
+export default Layout(index);
