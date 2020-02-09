@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import IconNewNote from '../Layout/IconNewNote';
 
 class NotesList extends Component {
     constructor(props) {
@@ -17,6 +18,7 @@ class NotesList extends Component {
                         <div className="card-content">{note.data}</div>
                     </div>
                 )}
+                <IconNewNote />
             </div>
         )
     }

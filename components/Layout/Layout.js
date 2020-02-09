@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import IconNewNote from './IconNewNote';
 import NavBar from './NavBar';
 
 const Layout = Page => {
@@ -14,7 +13,6 @@ const Layout = Page => {
                         <NavBar />
                     </header>
                     <Page />
-                    <IconNewNote />
                 </div>
             )
         }
