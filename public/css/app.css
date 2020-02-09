@@ -10,7 +10,8 @@ body {
     width: 100%;
     height: 50px;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #808080;
     background-color: #D3D3D3;
 }
 
@@ -18,12 +19,24 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 265px;
+    background-color: #D3D3D3;
+    width: 264px;
+}
+
+.user-component {
+    display: flex;
+    align-items: center;
+}
+
+.user-component > i {
+    font-size: 40px;
+    margin: 0px 15px 0px 10px;
 }
 
 
 /* Home Screen */
 .home-itens { display: flex; }
+
 
 /* notes */
 .list-notes {
@@ -59,11 +72,11 @@ body {
 /* classes */
 .list-classes {
     background-color: #D3D3D3;
-    padding: 10px;
+    padding: 10px 5px 10px 5px;
     position: fixed;
-    height: 100%;
-    top: 50px
-    /* overflow-y: scroll; */
+    height: 90%;
+    top: 50px;
+    overflow-y: scroll;
 }
 
 .card-class {
@@ -75,6 +88,30 @@ body {
     box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
     width: 230px;
     border-left: 6px solid;
+    transition: all .2s ease-in-out;
+}
+
+
+/* Scroll Style List Classes*/
+.list-classes::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.list-classes::-webkit-scrollbar-track {
+    padding: 2px 0;
+    background-color: #d3d3d3;
+}
+  
+.list-classes::-webkit-scrollbar {
+    width: 10px;
+}
+  
+.list-classes::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #808080;
+    border: 1px solid #D3D3D3;
 }
 
 
@@ -99,7 +136,7 @@ body {
     color: #808080;
 }
 
-.green-circle:hover { 
+.zoom-hover:hover { 
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
