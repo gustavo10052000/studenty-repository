@@ -4,8 +4,8 @@ class NewNote extends Component {
     render() {
         return(
             <form className="form-note">
-                <div>Nome: </div>
-                <input />
+                <div >Nome: </div>
+                <input className="name-note"/>
                 <div>Anotação: </div>
                 <textarea className="input-note"/>
                 <button>Enviar Anotação</button>
