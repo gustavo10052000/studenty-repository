@@ -4,11 +4,17 @@ import Classes from '../components/Classes/ListClasses';
 import Notes from '../components/Notes/ListNotes';
 
 class index extends Component {
+    infoClass(classItem) {
+        this.setState({
+            classItem: classItem
+        });
+    }
+
     render() {
         return(
             <div className="home-itens">
-                <Classes classes={this.state.classesExample}/>
-                <Notes notes={this.state.notesExample}/>
+                <Classes classes={this.state.classesExample} getClass={this.infoClass}/>
+                <Notes notes={this.state.notesExample} classItem={this.state.classItem}/>
             </div>
         );
     }
@@ -16,6 +22,7 @@ class index extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            backgroundColorNotes: '',
             classesExample: [
                 {
                     id: 1,
@@ -112,7 +119,8 @@ class index extends Component {
                     data: "anotação de aula genérica"
                 }
             ]
-        }
+        };
+        this.infoClass = this.infoClass.bind(this);
     }
 };
 
