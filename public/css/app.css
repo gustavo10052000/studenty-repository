@@ -31,7 +31,7 @@ button {
     align-items: center;
     justify-content: center;
     background-color: #D3D3D3;
-    width: 264px;
+    width: 270px;
     border-right: 1px solid #808080;
 }
 
@@ -52,7 +52,7 @@ button {
 
 /* notes */
 .list-notes {
-    padding: 51px 0px 0px 265px;
+    padding: 51px 0px 0px 271px;
 }
 
 .note {
@@ -65,7 +65,7 @@ button {
 .card-note {
     flex: 1 0 21%;
     margin: 3px;
-    max-width: 25px;
+    max-width: 250px;
     min-width: 250px;
     height: 250px;
     border: 1px solid #808080;
@@ -127,6 +127,23 @@ button {
     width: 250px;
 }
 
+.without-notes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fa-book {
+    font-size: 200px;
+    color: #808080
+}
+
 
 
 /* classes */
@@ -138,6 +155,7 @@ button {
     height: 90%;
     top: 50px;
     overflow-y: scroll;
+    width: 260px;
 }
 
 .card-class {

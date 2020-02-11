@@ -20,7 +20,7 @@ class NotesList extends Component {
                             <input className="search-notes-input" placeholder="Procurar..." style={{ border: 0, marginLeft: 5 }}/>
                         </div>
                     </div>
-                    <div className="note">
+                    <div className="note" style={{ backgroundColor: `${this.props.classItem.color}66` }}>
                         {this.state.notes.map(note =>
                             <div className="card-note" key={note.id} style={{ backgroundColor: this.props.classItem.color }}>
                                 <h4>{note.name}</h4>
@@ -33,7 +33,12 @@ class NotesList extends Component {
             )
         }
 
-        return(<div></div>)
+        return(
+            <div className="without-notes">
+                <i className="fas fa-book" />
+                <h1>Selecione uma matéria</h1>
+            </div>
+        )
     }
 }
 
