@@ -2,6 +2,7 @@ body {
     margin: 0px;
     background-color: #E8E8E8;
     font-family: 'Rubik', sans-serif;
+    overflow: hidden;
 }
 
 button {
@@ -19,7 +20,7 @@ button {
 .header {
     position: fixed;
     width: 100%;
-    height: 50px;
+    height: 7vh;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #808080;
@@ -31,7 +32,7 @@ button {
     align-items: center;
     justify-content: center;
     background-color: #D3D3D3;
-    width: 270px;
+    width: 22vw;
     border-right: 1px solid #808080;
 }
 
@@ -42,7 +43,7 @@ button {
 
 .user-component > i {
     font-size: 40px;
-    margin: 0px 15px 0px 10px;
+    margin: 0vh 1vw 0vh 1vw;
 }
 
 
@@ -52,22 +53,25 @@ button {
 
 /* notes */
 .list-notes {
-    padding: 51px 0px 0px 271px;
+    padding: 7.2vh 0px 0px 22vw;
+    width: 79vw;
+    height: 92.8vh;
 }
 
 .note {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 50px;
-    padding-left: 5px
+    padding-top: 7vh;
+    padding-left: 1vh;
+    height: 100%;
 }
 
 .card-note {
     flex: 1 0 21%;
-    margin: 3px;
-    max-width: 250px;
-    min-width: 250px;
-    height: 250px;
+    margin: 1vh;
+    width: 18vw;
+    height: 18vw;
+    max-width: 18vw;
     border: 1px solid #808080;
     border-radius: 3px;
     background-color: #F1F1F1;
@@ -76,8 +80,7 @@ button {
 
 .card-content {
     background-color: #fff;
-    height: 70%;
-    margin: 0px 10px;
+    margin: 1vw 1vw;
     border-radius: 5px;
     text-align: center;
     border: 1px solid #808080;
@@ -87,12 +90,14 @@ button {
 
 .name-class {
     background-color: #808080;
-    width: 100%;
-    height: 40px;
+    width: 79vw;
+    height: 6vh;
     position: fixed;
-    border-bottom: 1px solid #808080;
+    border-bottom: 0.1vh solid #808080;
+    border-left: 0.1vh solid #808080;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .name-class > h2 {
@@ -101,24 +106,27 @@ button {
 
 .search-notes {
     display: flex;
+    margin-right: 2vw;
+    /* border: solid 2px #808080; */
+    border-radius: 2000vw;
 }
 
 .search-notes > i {
-    width: 45px;
-    height: 32px;
+    width: 2.5vw;
+    height: 4.6vh;
     background-color: #FFF;
-    font-size: 20px;
-    border-radius: 20px 0px 0px 20px;
+    font-size: 3vh;
+    border-radius: 10vh 0px 0px 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .search-notes > input {
-    height: 30px;
+    height: 4.3vh;
     width: 100px;
     margin: 0 !important;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0px 10vh 10vh 0px;
     outline-width: 0;
     transition: all .2s ease-in-out;
 }
@@ -150,26 +158,26 @@ button {
 .list-classes {
     border-right: 1px solid #808080;
     background-color: #D3D3D3;
-    padding: 10px 5px 10px 5px;
+    padding: 0vh 1vw 0vh 1vw;
     position: fixed;
-    height: 90%;
-    top: 50px;
+    height: 93vh;
+    top: 7vh;
     overflow-y: scroll;
-    width: 260px;
+    width: 20vw;
 }
 
 .card-class {
     border: 2px solid;
     border-radius: 3px;
     background-color: #F1F1F1;
-    margin-bottom: 5px;
-    padding-left: 6px   ;
+    margin-bottom: 1vh;
+    padding-left: 0.8vw;
     box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
-    width: 230px;
+    width: 18vw;
+    min-height: 14vh;
     border-left: 6px solid;
     transition: all .2s ease-in-out;
 }
-
 
 /* Scroll Style List Classes*/
 .list-classes::-webkit-scrollbar {
@@ -196,10 +204,10 @@ button {
 
 /* Icon New Note */
 .green-circle {
-    height: 65px;
-    width: 65px;
+    height: 10vh;
+    width: 10vh;
     background-color: #BFFCC6;
-    border-radius: 40px;
+    border-radius: 10vh;
     border: solid 1px #808080;
     display: flex;
     align-items: center;
@@ -211,7 +219,7 @@ button {
 }
 
 .fa-pencil-alt {
-    font-size: 35px;
+    font-size: 6vh;
     color: #808080;
 }
 
