@@ -296,14 +296,14 @@ button {
     transition: all 0.2s ease-out;
 }
 
-label:hover ~ .grade {
+.number-grade:hover ~ .grade {
     height: 50vh;
 }
 
-label:hover {
+.number-grade:hover {
     font-weight: bold;
 }
-.list-grade > input:checked ~ label {
+.list-grade > input:checked ~ .number-grade {
     font-weight: bold;
 }
 
