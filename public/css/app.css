@@ -303,6 +303,9 @@ label:hover ~ .grade {
 label:hover {
     font-weight: bold;
 }
+.list-grade > input:checked ~ label {
+    font-weight: bold;
+}
 
 .list-grade > input:checked ~ .grade {
     height: 50vh;
