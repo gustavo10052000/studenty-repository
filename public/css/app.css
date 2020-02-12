@@ -130,7 +130,6 @@ button {
 .search-notes {
     display: flex;
     margin-right: 2vw;
-    /* border: solid 2px #808080; */
     border-radius: 2000vw;
 }
 
@@ -283,10 +282,6 @@ button {
 
 
 /* Grade */
-.list-grade > input:checked ~ .grade {
-    display: block !important;
-}
-
 .number-grade {
     display: flex;
     background-color: #d3d3d3;
@@ -295,47 +290,26 @@ button {
 }
 
 .grade {
-    position: relative;
-}
-
-.grade:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 0;
     top: 0;
-    left: 0;
-    background-color: #000;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
-}
-
-label:hover ~ .grade:before {
-    height: 100%;
-    visibility: visible;
-}
-
-.grade {
     overflow: hidden;
-    transition: all .2s ease-in-out;
-    visibility: visible;
+    height: 0px;
+    transition: all 0.2s ease-out;
 }
+
+label:hover ~ .grade {
+    height: 50vh;
+}
+
+label:hover {
+    font-weight: bold;
+}
+
+.list-grade > input:checked ~ .grade {
+    height: 50vh;
+} 
 
 .list-grade {
     padding-bottom: 3vh;
     transition: all .2s ease-in-out;
     visibility: visible; 
 }
-
-/* .search-notes > input {
-    height: 4.3vh;
-    width: 100px;
-    margin: 0 !important;
-    border-radius: 0px 10vh 10vh 0px;
-    outline-width: 0;
-    transition: all .2s ease-in-out;
-}
-
-.search-notes > input:hover, .search-notes > input:focus {
-    width: 250px;
-} */

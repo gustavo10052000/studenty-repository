@@ -32,8 +32,8 @@ class ClassList extends Component {
                         <label className="number-grade" for={`parent${grade}`}>
                             {grade}° Termo
                         </label>
-                        <div className="grade" style={{ display: "none" }}>
-                        {/* <div className="grade" > */}
+                        {/* <div className="grade" style={{ display: "none" }}> */}
+                        <div className="grade" >
                             {this.state.classes.map(classItem =>
                                 {if(grade === classItem.grade) {
                                     return(
