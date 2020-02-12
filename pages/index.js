@@ -26,42 +26,49 @@ class index extends Component {
             classesExample: [
                 {
                     id: 1,
+                    grade: 2,
                     name: "Programação Orientada a Objetos",
                     teacher: "Ricardo Favan",
                     color: "#FFB5E8"
                 },
                 {
                     id: 2,
+                    grade: 1,
                     name: "Matemática Discreta",
                     teacher: "Deise Deolindo",
                     color: "#B5B9FF"
                 },
                 {
                     id: 3,
+                    grade: 4,
                     name: "Algoritimos Avançados",
                     teacher: "Victor Borba",
                     color: "#FFFFD1"
                 },
                 {
                     id: 4,
+                    grade: 2,
                     name: "Geometria Analitica",
                     teacher: "Marçal Bissoli",
                     color: "#85E3FF"
                 },
                 {
                     id: 5,
+                    grade: 1,
                     name: "Sociedade, Tecnologia e Inovação",
                     teacher: "Tsen Chung",
                     color: "#F3FFE3"
                 },
                 {
                     id: 6,
+                    grade: 2,
                     name: "Programação Front-End",
                     teacher: "Ricardo Favan",
                     color: "#FFABAB"
                 },
                 {
                     id: 7,
+                    grade: 1,
                     name: "Lógica de Programação",
                     teacher: "Luís Hilário",
                     color: "#F6A6FF"
