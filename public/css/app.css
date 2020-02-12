@@ -293,7 +293,7 @@ button {
     top: 0;
     overflow: hidden;
     height: 0px;
-    transition: all 0.2s ease-out;
+    transition: all 0.35s ease-out;
 }
 
 .number-grade:hover ~ .grade {

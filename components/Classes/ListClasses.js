@@ -28,8 +28,7 @@ class ClassList extends Component {
             <div className="list-classes">
                 {this.state.grades.map(grade =>
                     <div className="list-grade">
-                        <input type="radio" name="cheked-grade" hidden id={`parent${grade}`}/>
-                        {/* <input type="checkbox" name="cheked-grade" hidden id={`parent${grade}`}/> */}
+                        <input type="checkbox" name="cheked-grade" hidden id={`parent${grade}`}/>
                         <label className="number-grade" for={`parent${grade}`}>
                             {grade}° Termo
                         </label>
