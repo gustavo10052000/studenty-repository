@@ -10,20 +10,6 @@ class ClassList extends Component {
     }
 
     render() {
-        // return(
-        //     <div className="list-classes">
-        //         {this.state.classes.map(classItem =>
-        //             <div className="card-class zoom-hover"
-        //             key={classItem.id}
-        //             style={{ borderColor: classItem.color }}
-        //             onClick={() => this.props.getClass(classItem)}
-        //             >
-        //                 <h3>{classItem.name}</h3>
-        //                 <p>{classItem.teacher}</p>
-        //             </div>
-        //         )}
-        //     </div>
-        // )
         return(
             <div className="list-classes">
                 {this.state.grades.map(grade =>
@@ -32,7 +18,6 @@ class ClassList extends Component {
                         <label className="number-grade" for={`parent${grade}`}>
                             {grade}° Termo
                         </label>
-                        {/* <div className="grade" style={{ display: "none" }}> */}
                         <div className="grade" >
                             {this.state.classes.map(classItem =>
                                 {if(grade === classItem.grade) {

@@ -305,6 +305,7 @@ button {
 }
 .list-grade > input:checked ~ .number-grade {
     font-weight: bold;
+    color: #FFF;
 }
 
 .list-grade > input:checked ~ .grade {
