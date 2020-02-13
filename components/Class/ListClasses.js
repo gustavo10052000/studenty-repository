@@ -13,7 +13,7 @@ class ClassList extends Component {
         return(
             <div className="list-classes">
                 {this.state.grades.map(grade =>
-                    <div className="list-grade">
+                    <div className="list-grade" key={grade}>
                         <input type="checkbox" name="cheked-grade" hidden id={`parent${grade}`}/>
                         <label className="number-grade" for={`parent${grade}`}>
                             {grade}° Termo

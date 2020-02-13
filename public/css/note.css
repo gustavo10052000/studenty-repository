@@ -108,14 +108,13 @@
 }
 
 .without-notes {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    height: 93vh;
+    width: 78vw;
+    padding: 7vh 0vw 0vh 22vw;
 
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
