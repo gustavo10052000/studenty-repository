@@ -13,7 +13,7 @@ class NotesList extends Component {
         if(this.props.classItem) {
             return(
                 <div className="list-notes">
-                    <div className="name-class" style={{ backgroundColor: this.props.classItem.color }}>
+                    <div className="header-notes" style={{ backgroundColor: this.props.classItem.color }}>
                         <h2>{this.props.classItem.name}</h2>
                         <div className="search-notes">
                             <i className="fas fa-search"/>
@@ -24,7 +24,7 @@ class NotesList extends Component {
                         {this.state.notes.map(note =>
                             <div className="card-note" key={note.id} style={{ backgroundColor: this.props.classItem.color }}>
                                 <h4>{note.name}</h4>
-                                <div className="card-content">{note.data}</div>
+                                <div className="card-note-content">{note.data}</div>
                             </div>
                         )}
                     </div>

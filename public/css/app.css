@@ -16,164 +16,8 @@ button {
 }
 
 
-/* Header */
-.header {
-    position: fixed;
-    width: 100%;
-    height: 7vh;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #808080;
-    background-color: #D3D3D3;
-}
-
-.title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #D3D3D3;
-    width: 22vw;
-    border-right: 1px solid #808080;
-}
-
-.user-component {
-    display: flex;
-    align-items: center;
-}
-
-.user-component > i {
-    font-size: 40px;
-    margin: 0vh 1vw 0vh 1vw;
-}
-
-
 /* Home Screen */
 .home-itens { display: flex; }
-
-
-/* notes */
-.list-notes {
-    padding: 7.2vh 0px 0px 22vw;
-    width: 79vw;
-    height: 92.8vh;
-}
-
-
-.note::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-
-.note::-webkit-scrollbar-track {
-    padding: 2px 0;
-    background-color: #d3d3d3;
-}
-  
-.note::-webkit-scrollbar {
-    width: 10px;
-}
-  
-.note::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-    background-color: #808080;
-    border: 1px solid #D3D3D3;
-}
-
-.note {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 7vh;
-    padding-left: 1vh;
-    padding-bottom: 1vh;
-    height: 85vh;
-    overflow-y: scroll;
-}
-
-.card-note {
-    flex: 1 0 21%;
-    margin: 1vh;
-    width: 18vw;
-    max-width: 18vw;
-    border: 1px solid #808080;
-    border-radius: 3px;
-    background-color: #F1F1F1;
-    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
-}
-
-.card-content {
-    background-color: #fff;
-    margin: 1vw 1vw;
-    border-radius: 5px;
-    text-align: center;
-    border: 1px solid #808080;
-}
-
-.card-note > h4 { text-align: center; }
-
-.name-class {
-    background-color: #808080;
-    width: 79vw;
-    height: 6vh;
-    position: fixed;
-    border-bottom: 0.1vh solid #808080;
-    border-left: 0.1vh solid #808080;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 0.1vh;
-}
-
-.name-class > h2 {
-    margin: 0px 10px;
-}
-
-.search-notes {
-    display: flex;
-    margin-right: 2vw;
-    border-radius: 2000vw;
-}
-
-.search-notes > i {
-    width: 4vw;
-    height: 4.6vh;
-    background-color: #FFF;
-    font-size: 3vh;
-    border-radius: 10vh 0px 0px 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.search-notes > input {
-    height: 4.3vh;
-    width: 100px;
-    margin: 0 !important;
-    border-radius: 0px 10vh 10vh 0px;
-    outline-width: 0;
-    transition: all .2s ease-in-out;
-}
-
-.search-notes > input:hover, .search-notes > input:focus {
-    width: 250px;
-}
-
-.without-notes {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.fa-book {
-    font-size: 200px;
-    color: #808080
-}
 
 
 
@@ -274,7 +118,8 @@ button {
 .number-grade {
     display: flex;
     width: 100%;
-    padding: 0.5vh 0vw 2.5vh 0vw;
+    padding-top: 1vh;
+    height: 5vh;
     transition: all 0.2s ease-out;
 }
 
