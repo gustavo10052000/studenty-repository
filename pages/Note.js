@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import NewNote from '../components/Notes/NewNote';
+import NewNote from '../components/Note/NewNote';
 
 class Note extends Component {
     render() {

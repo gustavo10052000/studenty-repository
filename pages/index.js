@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Layout from '../components/Layout/Layout';
-import Classes from '../components/Classes/ListClasses';
-import Notes from '../components/Notes/ListNotes';
+import Classes from '../components/Class/ListClasses';
+import Notes from '../components/Note/ListNotes';
 
 class index extends Component {
     infoClass(classItem) {
