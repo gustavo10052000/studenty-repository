@@ -20,13 +20,15 @@ class NotesList extends Component {
                             <input className="search-notes-input" placeholder="Procurar..." style={{ border: 0, marginLeft: 5 }}/>
                         </div>
                     </div>
-                    <div className="note" style={{ backgroundColor: `${this.props.classItem.color}66` }}>
-                        {this.state.notes.map(note =>
-                            <div className="card-note" key={note.id} style={{ backgroundColor: this.props.classItem.color }}>
-                                <h4>{note.name}</h4>
-                                <div className="card-note-content">{note.data}</div>
-                            </div>
-                        )}
+                    <div style={{ backgroundColor: `${this.props.classItem.color}66`, height: '95vh'}}>
+                        <div className="note" >
+                            {this.state.notes.map(note =>
+                                <div className="card-note" key={note.id} style={{ backgroundColor: this.props.classItem.color }}>
+                                    <h4>{note.name}</h4>
+                                    <div className="card-note-content">{note.data}</div>
+                                </div>
+                            )}
+                        </div>
                     </div>
                     <IconNewNote />
                 </div>
