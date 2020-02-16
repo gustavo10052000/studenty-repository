@@ -41,7 +41,7 @@
     flex: 1 0 21%;
     margin: 1vh;
     width: 18vw;
-    max-width: 18vw;
+    max-width: 18vw;    
     border: 1px solid #808080;
     border-radius: 3px;
     background-color: #F1F1F1;
@@ -124,4 +124,36 @@
 .fa-book {
     font-size: 200px;
     color: #808080
+}
+
+
+
+/* Form New Note */
+.form-note {
+    border: 3px solid #808080;
+    border-radius: 10px;
+    background-color: #D3D3D3;
+    padding: 1vh 0vw 0vh 0vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-note, .name-note, .form-note > button {
+    margin: 0.5vh 1vw 1.5vh 1vw;
+    width: 50vw;
+    border: 2px solid #808080;
+    border-radius: 5px;
+    resize: none;
+}
+
+.content-note {
+    height: 30vh;
 }

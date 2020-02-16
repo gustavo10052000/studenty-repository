@@ -85,35 +85,6 @@ button {
 }
 
 
-/* Form New Note */
-.form-note {
-    border: 3px solid #808080;
-    border-radius: 10px;
-    background-color: #D3D3D3;
-    height: 85%;
-    width: 500px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-}
-
-.input-note { height: 80%; }
-
-.input-note, .name-note {
-    width: 90%;
-    border: 2px solid #808080;
-    border-radius: 5px;
-    resize: none;
-}
-
-
 /* Grade */
 .number-grade {
     display: flex;

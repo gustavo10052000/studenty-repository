@@ -7,7 +7,7 @@ class NewNote extends Component {
                 <div >Nome: </div>
                 <input className="name-note"/>
                 <div>Anotação: </div>
-                <textarea className="input-note"/>
+                <textarea className="content-note"/>
                 <button>Enviar Anotação</button>
             </form>
         )
